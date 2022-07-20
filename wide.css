@@ -76,7 +76,22 @@ img#rhcePng {
 		height: auto; 
 	}
 
-	img#welcomeHomeImg:hover{
+img#welcomeHomeImg:hover{
+		transition: all ease 1s;
+		animation-iteration-count:infinite;
+		transform: rotate( 45deg );
+	}
+img#welcomeContactImg:hover{
+		transition: all ease 1s;
+		animation-iteration-count:infinite;
+		transform: rotate( 45deg );
+	}	
+img#welcomeBlogImg:hover{
+		transition: all ease 1s;
+		animation-iteration-count:infinite;
+		transform: rotate( 45deg );
+	}
+img#welcomeResumeImg:hover{
 		transition: all ease 1s;
 		animation-iteration-count:infinite;
 		transform: rotate( 45deg );
