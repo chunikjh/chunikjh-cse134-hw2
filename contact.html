@@ -2,28 +2,58 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <!-- Search Engine Optimization -->
-    <meta name="author" content="Ji Hoon Kim">
-    <meta name="description" content="Ji Hoon's tech blog is a space for sharing technology related to computer science and posting personal daily lives.">
-    <title>Ji Hoon's Tech Blog !</title>
+	<meta charset="utf-8" />
+	<!-- Search Engine Optimization -->
+	<meta name="author" content="Ji Hoon Kim">
+	<meta name="description" content="Ji Hoon's tech blog is a space for sharing technology related to computer science and posting personal daily lives.">
+	<style>	
+		@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+		#logoWide, #logoMedium, #logoNarrow {display: none;}
+	</style>	
+	<!-- CSS -->
+	<link rel="stylesheet" media="screen and (min-width:1024px)" href="wide.css" />
+	<link rel="stylesheet" media="screen and (min-width:641px) and (max-width:1023px)" href="medium.css" />
+	<link rel="stylesheet" media="screen and (max-width:640px)" href="narrow.css" />
+
+	<!-- Java Script -->
+	<script defer src="script.js"></script>
+
+	<title>Ji Hoon's Tech Blog !</title>
+	<link rel="author" href="https://linkedin.com/in/jihoon-john-kim/">
 </head>
 <body>
-    <header>
-        <!--home logo-->
-        <a href="home.html">
-            <img src="images/logo.png" alt="home" width="260" height="140">
-        </a>
-        <h1 style="color:maroon">Welcome to <em>Ji Hoon's Tech Blog!</em></h1>
-        <!--menu bar-->
-        <nav>
-            <a href="resume.html">resume</a>
-            <a href="blog.html">blog</a>
-            <a href="contact.html">contact</a>
-            <input type="search" id="mySearch" name="q">
-            <button>Search</button>
-        </nav>
-    </header>
+	<header class="wrapperHead">
+		<!--home logo-->
+		<section class="logo">
+			<a href="home.html">
+			<img id="logoWide" src="images/logo.png" alt="home">
+			<img id="logoMedium" src="images/logo.png" alt="home">
+			<img id="logoNarrow" src="images/logo.png" alt="home">
+			</a>
+		</section>
+	
+		<!--welcome Headline-->
+		<h1 class="welcomeHeadline">&nbsp;&nbsp;Welcome to <em>Ji Hoon's Tech Blog!</em> [contact]</h1>
+		
+		<!--menu bar-->
+		<nav class="menu">
+			<a href="resume.html">resume</a>
+			<a href="blog.html">blog</a>
+			<a href="contact.html">contact</a>
+		</nav>
+
+		<!--search-->
+		<section class="search">
+		<input list="featured" type="search" id="mySearch" name="q">
+			<datalist id="featured">
+				<option value="Resume">
+				<option value="Daily">
+				<option value="Tech Study">
+			</datalist>
+		<button>Search</button>
+		</section>
+
+	</header>
 
     <main>
         <!--welcome image-->
